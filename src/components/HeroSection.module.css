@@ -1,0 +1,49 @@
+.heroSection {
+    /* border: 2px solid rgb(126, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 75px;
+}
+
+/* .split {
+    border: 1px solid rebeccapurple;
+} */
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #2b0496;
+    border: none;
+    border-radius: 5px;
+    color: #f3f3f3;
+    width: fit-content;
+    transition: all 0.2s ease-in;
+    box-shadow: 5px 5px 0px #19015b;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
