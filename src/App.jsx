@@ -1,6 +1,7 @@
 import './App.css'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import HeroSection from './components/HeroSection.jsx';
+import NavBar from './components/NavBar.jsx';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <NavBar />
       <HeroSection />
     </>
   )

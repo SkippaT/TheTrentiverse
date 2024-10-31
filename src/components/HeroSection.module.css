@@ -14,11 +14,13 @@
 } */
 
 h1 {
+    /* border: 1px solid blue; */
     font-size: 64px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h3 {
+    /* border: 1px solid blue; */
     font-size: 36px;
     margin-bottom: 30px;
 }
