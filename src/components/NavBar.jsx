@@ -20,7 +20,7 @@ export default function NavBar() {
 
     return (
         <div className={classes.navBar}>
-            <a href="#">The Trentiverse</a>
+            <a href="#" style={{fontWeight: "bold", fontSize: "1.2rem"}}>The Trentiverse</a>
             <button className={`${classes.toggleMenu} material-symbols-outlined`}>menu</button>
             {/* <button class="toggle-menu"><i class="fa-solid fa-bars"></i></button> */}
             <div className={classes.links}>

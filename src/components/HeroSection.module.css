@@ -1,39 +1,42 @@
 .heroSection {
-    /* border: 2px solid rgb(126, 0, 0); */
+    border: 2px solid rgb(126, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
     max-height: 700px;
+    min-height: 500px;
     width: 100vw;
     gap: 75px;
+    flex-wrap: wrap;
+    padding: 100px 50px;
 }
 
 /* .split {
     border: 1px solid rebeccapurple;
 } */
 
-h1 {
+.heroSection h1 {
     /* border: 1px solid blue; */
     font-size: 64px;
     margin-bottom: 20px;
 }
 
-h3 {
+.heroSection h3 {
     /* border: 1px solid blue; */
     font-size: 36px;
     margin-bottom: 30px;
 }
 
-.buttons {
+.heroSection .buttons {
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-button {
+.heroSection button {
     padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -45,7 +48,7 @@ button {
     transition: all 0.2s ease-in;
     box-shadow: 5px 5px 0px #19015b;
 }
-button:hover {
+.heroSection button:hover {
     cursor: pointer;
     box-shadow: none;
     transform: translate(5px, 5px);

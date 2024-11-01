@@ -2,6 +2,7 @@ import './App.css'
 import { motion, useScroll, useTransform } from 'framer-motion';
 import HeroSection from './components/HeroSection.jsx';
 import NavBar from './components/NavBar.jsx';
+import ProjectsSection from './components/ProjectsSection.jsx';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <>
       <NavBar />
       <HeroSection />
+      <ProjectsSection />
     </>
   )
 }
