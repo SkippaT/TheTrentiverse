@@ -15,7 +15,7 @@ export default function NavBar() {
         {
             name: "Soft Skills",
             link: "#soft-section"
-        }
+        },
     ];
 
     return (
@@ -24,15 +24,13 @@ export default function NavBar() {
             <button className={`${classes.toggleMenu} material-symbols-outlined`}>menu</button>
             {/* <button class="toggle-menu"><i class="fa-solid fa-bars"></i></button> */}
             <div className={classes.links}>
-                <a href="#projects-section"><span className="code">01.</span> Projects</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#experience-section">Experience</a>
 
-                <div className={classes.dropdown}>
-                    <a href="#about-me-section"><span className="code">02.</span>About Me</a>
-                    <Dropdown links={links} />
-                </div>
+                <Dropdown title="About Me" links={links} />
 
-                <a href="./TrentMitchellCV.pdf" target="blank"><span className="code">03.</span> Resume</a>
-                <a href="#contact-me-section"><span className="code">04.</span> Contact</a>
+                <a href="./TrentMitchellCV.pdf" target="blank">Resume</a>
+                <a href="#contact-me-section">Contact</a>
             </div>
         </div>
     );
