@@ -4,7 +4,14 @@ import memoji from "../assets/memoji.png";
 import snowboard from "../assets/snowboard.png";
 import classes from './Project.module.css';
 
-export default function Project() {
+export default function Project({
+    name,
+    sub,
+    description,
+    image,
+    imageDescription,
+    skills
+}) {
 
     return (
         <motion.div
@@ -19,20 +26,17 @@ export default function Project() {
             }}
         >
             <div className={`${classes.descriptionSplit} ${classes.split}`}>
-                <h1>Project Name</h1>
-                <h3>Project Subheading</h3>
-                <p>
-                    Project description. This can and should hopefully be quite long. I want it to be long so
-                    that the widths in the project container is reasonable.
-                </p>
+                <h1>{name}</h1>
+                <h3>{sub}</h3>
+                <p>{description}</p>
                 <div className={classes.skills}>
-                    <span className={classes.tag}>React</span>
-                    <span className={classes.tag}>JavaScript</span>
-                    <span className={classes.tag}>Python</span>
+                    {skills.map((skill) => (
+                        <li key={skill}><span className={classes.tag}>{skill}</span></li>
+                    ))}
                 </div>
             </div>
             <div className={`${classes.right} ${classes.split}`}>
-                <img src={snowboard} alt="Emoji image of Me" />
+                <img src={image} alt={imageDescription} />
             </div>
         </motion.div>
     );
