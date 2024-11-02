@@ -6,7 +6,7 @@ import classes from './Project.module.css';
 
 export default function Project({
     name,
-    sub,
+    subheading,
     description,
     image,
     imageDescription,
@@ -27,7 +27,7 @@ export default function Project({
         >
             <div className={`${classes.descriptionSplit} ${classes.split}`}>
                 <h1>{name}</h1>
-                <h3>{sub}</h3>
+                <h3>{subheading}</h3>
                 <p>{description}</p>
                 <div className={classes.skills}>
                     {skills.map((skill) => (
