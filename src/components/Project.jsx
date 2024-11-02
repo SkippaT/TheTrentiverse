@@ -25,18 +25,20 @@ export default function Project({
                 transition: { duration: "0.2", type: 'spring', stiffness: 300, damping: 15 }
             }}
         >
-            <div className={`${classes.descriptionSplit} ${classes.split}`}>
-                <h1>{name}</h1>
-                <h3>{subheading}</h3>
-                <p>{description}</p>
-                <div className={classes.skills}>
-                    {skills.map((skill) => (
-                        <li key={skill}><span className={classes.tag}>{skill}</span></li>
-                    ))}
+            <h1>{name}</h1>
+            <div className={classes.container}>
+                <div className={`${classes.descriptionSplit} ${classes.split}`}>
+                    <h3>{subheading}</h3>
+                    <p>{description}</p>
+                    <ol>
+                        {skills.map((skill) => (
+                            <li key={skill}><span className={classes.tag}>{skill}</span></li>
+                        ))}
+                    </ol>
                 </div>
-            </div>
-            <div className={`${classes.right} ${classes.split}`}>
-                <img src={image} alt={imageDescription} />
+                <div className={`${classes.right} ${classes.split}`}>
+                    <img src={image} alt={imageDescription} />
+                </div>
             </div>
         </motion.div>
     );

@@ -27,8 +27,8 @@ export const PROJECTS = [
         ]
     },
     {
-        name: "Project Name2",
-        subheading: "Project Subheading2",
+        name: "Project Name3",
+        subheading: "Project Subheading3",
         description: "Project2 description. This can and should hopefully be quite long. I want it to be long so that the widths in the project container is reasonable.",
         image: snowboard,
         imageDescription: "Picture of me snowboarding",

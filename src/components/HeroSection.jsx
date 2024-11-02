@@ -4,7 +4,7 @@ import classes from './HeroSection.module.css';
 
 const slogans = ["Engineering Student", "Tech Hobbyist", "Circuitry Connoisseur", "Code Whisperer"];
 
-export default function HeroSection() {
+export default function HeroSection({ targetRef }) {
 
     const [currentSloganIndex, setCurrentSloganIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
@@ -27,7 +27,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div className={classes.heroSection}>
+        <div className={classes.heroSection} ref={targetRef}>
             <div className={`${classes.left} ${classes.split}`}>
                 <h1>Trent Mitchell</h1>
                 <h3 className={`${classes.fade} ${!isVisible ? classes.hidden : ''}`}>

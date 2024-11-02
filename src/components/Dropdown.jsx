@@ -21,7 +21,7 @@ export default function Dropdown({ title, links }) {
             >
                 <ol style={{ listStyleType: "none" }}>
                     {links.map((link, index) => (
-                        <motion.li>
+                        <motion.li key={index}>
                             <a href={link.link}>{link.name}</a>
                         </motion.li>
                     ))}
