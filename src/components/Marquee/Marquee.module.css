@@ -2,6 +2,13 @@
     overflow: hidden;
     display: flex;
     flex-shrink: 0;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 20%,
+        black 80%,
+        transparent
+    );
 }
 
 .halfMarquee {
