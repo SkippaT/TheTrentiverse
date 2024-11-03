@@ -39,3 +39,21 @@ export const PROJECTS = [
         ]
     },
 ];
+
+export const TAGS = [
+    "Java",
+    "React",
+    "Python",
+    "C++",
+    "C",
+    "HTML",
+    "JavaScript",
+    "Framer-Motion",
+    "CSS",
+    "Machine Learning",
+    "Reinforcement Learning",
+    "SQL",
+    "Database design + management",
+    "Embedded programming",
+    "Cloud Computing"
+]

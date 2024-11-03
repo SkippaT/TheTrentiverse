@@ -1,0 +1,19 @@
+.marquee {
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.halfMarquee {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag {
+    background-color: #555555;
+    color: #f3f3f3;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    text-wrap: nowrap;
+    margin: 10px;
+}

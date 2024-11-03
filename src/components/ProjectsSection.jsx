@@ -1,6 +1,6 @@
 import Project from './Project.jsx';
 import classes from './ProjectsSection.module.css';
-import { PROJECTS } from '../projects.js';
+import { PROJECTS } from '../data.js';
 
 export default function ProjectsSection() {
 
