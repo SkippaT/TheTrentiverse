@@ -4,7 +4,7 @@ export default function ProjectTeaser({ project }) {
 
     return (
         <div className={classes.projectTeaser}>
-            <h1>{project.name}</h1>
+            <h1 className={classes.projectTitle}>{project.name}</h1>
             <div className={classes.container}>
                 <div className={`${classes.descriptionSplit} ${classes.split}`}>
                     <h3>{project.subheading}</h3>

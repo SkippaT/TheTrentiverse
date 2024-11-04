@@ -1,13 +1,10 @@
 import Project from './Project.jsx';
-import classes from './ProjectsSection.module.css';
 import { PROJECTS } from '../../data.js';
 
-export default function ProjectsSection() {
+export default function Projects() {
 
     return (
-        <div className={classes.projectsSection}>
-            <h1 style={{fontSize: "64px"}}>My Projects</h1>
-
+        <div>
             <ul>
                 {PROJECTS.map((project) => (
                     <li key={project.name}><Project project={project} /></li>
