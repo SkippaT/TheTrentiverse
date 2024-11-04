@@ -1,6 +1,6 @@
 import HeroSection from './components/HeroSection.jsx';
 import NavBar from './components/NavBar.jsx';
-import ProjectsSection from './components/ProjectsSection.jsx';
+import ProjectsSection from './components/Project/ProjectsSection.jsx';
 import Marquee from './components/Marquee/Marquee.jsx';
 
 import { TAGS } from './data.js';

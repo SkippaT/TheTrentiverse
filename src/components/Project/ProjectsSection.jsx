@@ -1,6 +1,6 @@
 import Project from './Project.jsx';
 import classes from './ProjectsSection.module.css';
-import { PROJECTS } from '../data.js';
+import { PROJECTS } from '../../data.js';
 
 export default function ProjectsSection() {
 
@@ -10,7 +10,7 @@ export default function ProjectsSection() {
 
             <ul>
                 {PROJECTS.map((project) => (
-                    <li key={project.name}><Project {...project} /></li>
+                    <li key={project.name}><Project project={project} /></li>
                 ))}
             </ul>
         </div>
