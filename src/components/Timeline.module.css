@@ -1,0 +1,16 @@
+.timeline h2 {
+    color: #19015b;
+    font-size: 24px;
+}
+
+.timeline button {
+    background-color: #3606ba;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #f3f3f3;
+}
+.timeline button:hover {
+    cursor: pointer;
+}

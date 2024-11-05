@@ -72,7 +72,7 @@ export const EXPERIENCE = [
         role: "Basketball referee",
         company: "Nunawading Basketball Association",
         description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
-        date: "2018 - 2023",
+        date: "2017 - 2021",
         icon: "sports"
     },
     {
@@ -80,7 +80,7 @@ export const EXPERIENCE = [
         role: "Bussie Superviser / Stores Member",
         company: "The Esplanade Hotel",
         description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
-        date: "2018 - 2023",
+        date: "2021 - Present",
         icon: "supervisor_account"
     },
     {
@@ -88,7 +88,7 @@ export const EXPERIENCE = [
         role: "NAB Technology Intern",
         company: "National Australia Bank",
         description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
-        date: "2018 - 2023",
+        date: "2024/25 Summer",
         icon: "star"
     },
 ]
