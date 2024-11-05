@@ -64,4 +64,31 @@ export const TAGS = [
     "Database design + management",
     "Embedded programming",
     "Cloud Computing"
+];
+
+export const EXPERIENCE = [
+    {
+        id: "BR",
+        role: "Basketball referee",
+        company: "Nunawading Basketball Association",
+        description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
+        date: "2018 - 2023",
+        icon: "sports"
+    },
+    {
+        id: "BS",
+        role: "Bussie Superviser / Stores Member",
+        company: "The Esplanade Hotel",
+        description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
+        date: "2018 - 2023",
+        icon: "supervisor_account"
+    },
+    {
+        id: "NAB_INT",
+        role: "NAB Technology Intern",
+        company: "National Australia Bank",
+        description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
+        date: "2018 - 2023",
+        icon: "star"
+    },
 ]

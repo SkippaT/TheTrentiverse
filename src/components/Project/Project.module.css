@@ -15,6 +15,9 @@
 .project:first-child {
     margin-top: 0;
 }
+.project:last-child {
+    margin-bottom: 50px;
+}
 
 .projectTeaser,
 .fullProject {
