@@ -1,5 +1,5 @@
 import classes from './Project.module.css';
-import Modal from '../Modal.jsx';
+import Modal from '../UI/Modal.jsx';
 
 export default function FullProject({ project, onClose }) {
 

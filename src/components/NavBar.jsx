@@ -1,4 +1,4 @@
-import Dropdown from './Dropdown';
+import Dropdown from './UI/Dropdown.jsx';
 import classes from './NavBar.module.css';
 
 export default function NavBar() {

@@ -1,10 +1,9 @@
 import HeroSection from './components/HeroSection.jsx';
 import NavBar from './components/NavBar.jsx';
-import Projects from './components/Project/Projects.jsx';
+import Projects from './components/ProjectsSection/Projects.jsx';
 import Marquee from './components/Marquee/Marquee.jsx';
 import Section from './components/Section.jsx';
-import Experience from './components/Experience.jsx';
-import Timeline from './components/Timeline.jsx';
+import Timeline from './components/ExperienceSection/Timeline.jsx';
 
 import { TAGS } from './data.js';
 

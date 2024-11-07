@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import classes from "./Timeline.module.css";
 
-import { EXPERIENCE } from "../data.js";
+import { EXPERIENCE } from "../../data.js";
 
 export default function Timeline() {
 
