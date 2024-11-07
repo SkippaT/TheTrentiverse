@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import classes from './Modal.module.css';
 import { useEffect } from 'react';
 
-export default function Modal({ children, onClose }) {
+export default function ProjectModal({ children, onClose, projectId }) {
 
     useEffect(() => {
         const handleKeyDown = (event) => {
@@ -31,8 +31,9 @@ export default function Modal({ children, onClose }) {
             exit={{ opacity: 0 }}
         >
             <motion.dialog
-                className={classes.modal}
+                className={`${classes.modal} ${classes.project}`}
                 open
+                layoutId={`expandable-card-${projectId}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}

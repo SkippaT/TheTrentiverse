@@ -1,0 +1,21 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+.experience h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.split {
+    max-width: 50%;
+}
+.experience .split h2 {
+    margin-bottom: 10px;
+}
+.experience ul {
+    list-style-type: disc;
+}
+.experience ul li {
+    margin-bottom: 5px;
+}

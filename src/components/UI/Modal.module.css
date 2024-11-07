@@ -2,15 +2,15 @@
     background-color: #f5f5f5;
     color: #19015b;
     position: fixed;
-    top: 5%;
-    margin: auto;
     border-radius: 6px;
-    /* padding: 1.5rem; */
+    padding: 1.5rem;
+    z-index: 10;
     max-width: 90%;
     max-height: 90%;
-    z-index: 10;
-    border: none;
     overflow: hidden;
+    border: none;
+    margin: auto;
+    overflow-y: auto;
 }
 
 .backdrop {
@@ -21,4 +21,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

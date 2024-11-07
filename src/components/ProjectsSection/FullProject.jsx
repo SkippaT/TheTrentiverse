@@ -1,10 +1,10 @@
 import classes from './Project.module.css';
-import Modal from '../UI/Modal.jsx';
+import ProjectModal from '../UI/ProjectModal.jsx';
 
 export default function FullProject({ project, onClose }) {
 
     return (
-        <Modal project={project} onClose={onClose}>
+        <ProjectModal projectId={project.id} onClose={onClose}>
             <div className={classes.fullProject}>
                 <h1>{project.name}</h1>
                 <div className={classes.container}>
@@ -36,6 +36,6 @@ export default function FullProject({ project, onClose }) {
                     </div>
                 </div>
             </div>
-        </Modal>
+        </ProjectModal>
     );
 }
