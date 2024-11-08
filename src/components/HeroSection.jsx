@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import memoji from "../assets/memoji.png";
 import classes from './HeroSection.module.css';
+import Button from "./UI/Button";
 
 const slogans = ["Engineering Student", "Tech Hobbyist", "Circuitry Connoisseur", "Code Whisperer"];
 
@@ -34,8 +35,8 @@ export default function HeroSection() {
                     {slogans[currentSloganIndex]}
                 </h3>
                 <div className={classes.buttons}>
-                    <button>Resumé</button>
-                    <button>Contact</button>
+                    <Button text="Resumé" />
+                    <Button text="Contact" />
                 </div>
             </div>
             <div className={`${classes.right} ${classes.split}`}>

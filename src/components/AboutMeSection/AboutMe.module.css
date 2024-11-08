@@ -1,0 +1,14 @@
+.aboutMe {
+    /* border: 2px solid blue; */
+    min-width: 50%;
+    max-width: 95%;
+}
+
+.links {
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}

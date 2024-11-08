@@ -6,6 +6,7 @@ import Section from './components/Section.jsx';
 import Timeline from './components/ExperienceSection/Timeline.jsx';
 
 import { TAGS } from './data.js';
+import AboutMe from './components/AboutMeSection/AboutMe.jsx';
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
       </Section>
       <Section sectionName="Experience">
         <Timeline />
+      </Section>
+      <Section sectionName="About Me">
+        <AboutMe />
       </Section>
     </>
   )
