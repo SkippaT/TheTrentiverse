@@ -68,9 +68,9 @@ export const TAGS = [
 
 export const EXPERIENCE = [
     {
-        id: "BR",
-        role: "Basketball referee",
-        company: "Nunawading Basketball Association",
+        id: "NAB_INT",
+        role: "NAB Technology Intern",
+        company: "National Australia Bank",
         description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
         rolesAndResponsibilities: [
             "This is one role that I had.",
@@ -82,8 +82,8 @@ export const EXPERIENCE = [
             "Because of the things I did here I enhanced this skill.",
             "I practiced this skill while working in this environment."
         ],
-        date: "2017 - 2021",
-        icon: "sports"
+        date: "2024/25 Summer",
+        icon: "star"
     },
     {
         id: "BS",
@@ -104,9 +104,9 @@ export const EXPERIENCE = [
         icon: "supervisor_account"
     },
     {
-        id: "NAB_INT",
-        role: "NAB Technology Intern",
-        company: "National Australia Bank",
+        id: "BR",
+        role: "Basketball referee",
+        company: "Nunawading Basketball Association",
         description: "This is a sample description for some experience that I have. It really means nothing and is simply here to take up space.",
         rolesAndResponsibilities: [
             "This is one role that I had.",
@@ -118,7 +118,46 @@ export const EXPERIENCE = [
             "Because of the things I did here I enhanced this skill.",
             "I practiced this skill while working in this environment."
         ],
-        date: "2024/25 Summer",
-        icon: "star"
+        date: "2017 - 2021",
+        icon: "sports"
+    }
+];
+
+export const STUDIES = [
+    {
+        degreeName: "Computer and Network Engineering",
+        degreeDescription: "This is a description of this degree. There is more to it...",
+        courses: [
+            {
+                courseName: "Embedded Systems",
+                courseDescription: "This is a description of the course. Once again, there is more to it..."
+            },
+            {
+                courseName: "Embedded Systems",
+                courseDescription: "This is a description of the course. Once again, there is more to it..."
+            },
+            {
+                courseName: "Embedded Systems",
+                courseDescription: "This is a description of the course. Once again, there is more to it..."
+            },
+        ]
     },
-]
+    {
+        degreeName: "Computer Science",
+        degreeDescription: "This is a description of this degree. There is more to it...",
+        courses: [
+            {
+                courseName: "Artificial Intelligence",
+                courseDescription: "This is a description of the course. Once again, there is more to it..."
+            },
+            {
+                courseName: "Artificial Intelligence",
+                courseDescription: "This is a description of the course. Once again, there is more to it..."
+            },
+            {
+                courseName: "Artificial Intelligence",
+                courseDescription: "This is a description of the course. Once again, there is more to it..."
+            },
+        ]
+    },
+];

@@ -1,0 +1,13 @@
+.headings {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 175px;
+    margin-bottom: 75px;
+}
+.headings h2 {
+    position: absolute;
+    cursor: pointer;
+}
