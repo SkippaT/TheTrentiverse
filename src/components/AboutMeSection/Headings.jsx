@@ -16,7 +16,7 @@ export default function Headings({ headings, onSelect }) {
   ];
 
   // Define the position and font size for the selected heading
-  const selectedStyle = { x: 0, y: 100, fontSize: '4em' };
+  const selectedStyle = { x: 0, y: 100, fontSize: '4em', color: "#3606ba" };
 
   return (
     <>
@@ -31,8 +31,8 @@ export default function Headings({ headings, onSelect }) {
                 setSelected(index);
                 onSelect(heading);
               }}
-              initial={isSelected ? selectedStyle : { ...positions[index], fontSize: "1.5rem" }}
-              animate={isSelected ? selectedStyle : { ...positions[index], fontSize: "1.5rem" }}
+              initial={isSelected ? selectedStyle : { ...positions[index], fontSize: "1.5rem", color: "#19015b" }}
+              animate={isSelected ? selectedStyle : { ...positions[index], fontSize: "1.5rem", color: "#19015b" }}
               transition={{ type: 'spring', stiffness: 200, damping: 15 }}
               style={{
                 zIndex: isSelected ? 1 : 0,

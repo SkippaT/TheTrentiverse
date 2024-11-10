@@ -6,6 +6,7 @@ import Button from '../UI/Button.jsx';
 import classes from './AboutMe.module.css';
 import MyStudies from './MyStudies.jsx';
 import Headings from './Headings.jsx';
+import TechnicalSkills from './TechnicalSkills.jsx';
 
 // ********************************************* Option 1 open ********************************************* 
 function Tab({ isSelected, onSelect, children }) {
@@ -48,10 +49,10 @@ export default function AboutMe() {
 
     function displaySection() {
         if (selectedHeading === "My Studies") {
-            return <p>me stoodays</p>
+            return <MyStudies />
         }
         if (selectedHeading === "Technical Skills") {
-            return <p>me tech skills</p>
+            return <TechnicalSkills />
         }
         if (selectedHeading === "Soft Skills") {
             return <p>these be me soft skills</p>
@@ -76,7 +77,7 @@ export default function AboutMe() {
             </menu>
             {/* ********************************************* Option 1 close *********************************************  */}
             {/* --------------------------------------------- Option 2 open ---------------------------------------------  */}
-            <Headings headings={headings} onSelect={handleChange} />
+            {/* <Headings headings={headings} onSelect={handleChange} /> */}
             {/* --------------------------------------------- Option 2 close ---------------------------------------------  */}
 
             {displaySection()}
