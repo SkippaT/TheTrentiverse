@@ -1,4 +1,3 @@
-import FlipCard from '../UI/FlipCard';
 import classes from './AboutMe.module.css';
 
 export default function MyStudies() {
