@@ -193,4 +193,35 @@ export const TECHNICAL_SKILLS = [
         proficiency: "beginner",
         description: "This is a short description of how I gained this skill and what I have done with it.",
     }
-]
+];
+
+export const SOFT_SKILLS = [
+    {
+        skill: "Teamwork",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Leadership",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Communication",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Problem Solving",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Work Ethic",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Project Management",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Adaptability",
+        description: "This is a short description of how I Gained this skill and what I have done with it.",
+    },
+];

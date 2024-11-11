@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
 
 import FlipCard from "../UI/FlipCard.jsx";
-import classes from './TechnicalSkills.module.css';
-
-import { TECHNICAL_SKILLS } from '../../data.js';
 import ProficiencyBar from '../UI/ProficiencyBar.jsx';
+import classes from './Skills.module.css';
 
-export default function TechnicalSkills() {
+export default function Skills({ techOrSoftSkills, skills }) {
 
     return (
         <>
@@ -16,34 +14,34 @@ export default function TechnicalSkills() {
                         visible: {
                             transition: { staggerChildren: 0.1 }
                         },
-                        hidden: {}
+                        hidden: {},
                     }}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                 >
 
-                    {TECHNICAL_SKILLS.map((skill) => (
+                    {skills.map((skill) => (
                         <motion.li
                             key={skill.skill}
                             variants={{
                                 hidden: { opacity: 0, scale: 0.5, rotateY: 90 },
-                                visible: { opacity: 1, scale: 1, rotateY: 0 }
+                                visible: { opacity: 1, scale: 1, rotateY: 0 },
                             }}
                             transition={{ type: 'spring' }}
                         >
-                            <FlipCard 
-                            frontSide={
-                                <div className={classes.skill}>
-                                    <h3>{skill.skill}</h3>
-                                    <ProficiencyBar proficiency={skill.proficiency} />
-                                </div>
-                            }
-                            backSide={
-                                <div>
-                                    <p>{skill.description}</p>
-                                </div>
-                            }
+                            <FlipCard
+                                frontSide={
+                                    <div className={classes.skill}>
+                                        <h3>{skill.skill}</h3>
+                                        {techOrSoftSkills === 'technical' && <ProficiencyBar proficiency={skill.proficiency} />}
+                                    </div>
+                                }
+                                backSide={
+                                    <div>
+                                        <p>{skill.description}</p>
+                                    </div>
+                                }
                             />
 
                         </motion.li>
