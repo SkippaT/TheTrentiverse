@@ -1,114 +1,5 @@
-/* .card {
-    --colour: #19015b;
-    --background-colour: #00000020;
-}
-
 .card {
-    width: 220px;
-    height: 254px;
-    position: relative;
-    border-radius: 40px;
-    transition: all 0.8s;
-    perspective: 600px;
-    perspective-origin: center bottom;
-}
-
-.upperPart {
-    width: 100%;
-    height: 65%;
-    border-radius: 40px 40px 0 0;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: all 0.9s;
-}
-
-.upperPartFace,
-.upperPartBack {
-    text-align: center;
-    background-color: var(--background-colour);
-    color: var(--colour);
-    border: 3px solid var(--colour);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    border-radius: 40px 40px 0 0;
-    font-weight: bold;
-    z-index: 2;
-    backface-visibility: hidden;
-    transition: all 0.6s;
-}
-
-.upperPartBack {
-    background-color: var(--colour);
-    color: lightgray;
-    transform: rotatex(180deg);
-}
-
-.lowerPart {
-    width: 100%;
-    height: 35%;
-    border-radius: 0 0 40px 40px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform-origin: center top;
-    transition: all 0.9s;
-}
-
-.lowerPartFace,
-.lowerPartBack {
-    background-color: var(--colour);
-    width: 100%;
-    height: 100%;
-    color: lightgray;
-    font-weight: bold;
-    position: absolute;
-    border-radius: 0 0 40px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0, -0.8px);
-    backface-visibility: hidden;
-    z-index: 2;
-    font-size: 24px;
-}
-
-.lowerPartBack {
-    backface-visibility: visible;
-    border-radius: 40px;
-    color: var(--colour);
-    background-color: var(--background-colour);
-    transform: rotateX(180deg);
-    z-index: 1;
-    transition: border-radius 0.6s;
-}
-
-.card:hover>.upperPart {
-    transform: rotatex(-0.5turn);
-}
-
-.card:hover>.lowerPart {
-    transform: translateY(88.3px) rotateX(0.5turn);
-}
-
-.card:hover>.lowerPart>.lowerPartBack {
-    border: 3px solid var(--colour);
-    border-radius: 0 0 40px 40px;
-} */
-
-
-
-
-
-
-
-
-
-/* .card {
-    width: 400px;
+    width: 350px;
     height: 200px;
     border-radius: 10px;
     perspective: 1000px;
@@ -119,98 +10,39 @@
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.2s;
 }
 
 .card:hover .innerCard {
     transform: rotateY(180deg);
 }
+
 .cardFront,
 .cardBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.cardFront {
-    background-color: #6A2C70;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    border: 10px solid #6A2C70;
-    border-radius: 10px;
-    justify-content: center;
-    font-size: 24px;
-    transform: rotateY(0deg);
-  }
-  
-  .cardBack {
-    background-color: #F08A5D;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    border: 10px solid #F08A5D;
-    border-radius: 10px;
-    justify-content: center;
-    font-size: 24px;
-    transform: rotateY(180deg);
-  } */
-
-
-
-
-
-
-
-
-
-.card {
-    width: 400px; 
-    height: 200px;
-    border-radius: 10px;
-    perspective: 1000px; 
-}
-
-.innerCard {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    /* transition: transform 0.2s; */
-}
-
-.card:hover .innerCard {
-    transform: rotateY(180deg);
-}
-.cardFront,
-.cardBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 20px;
 }
 
 .cardFront {
-    background-color: #6A2C70;
-    color: #fff;
+    background-color: #3606bab3;
+    color: #FF8C00;
     display: flex;
     align-items: center;
-    border: 10px solid #6A2C70;
     border-radius: 10px;
     justify-content: center;
-    font-size: 24px;
+    font-size: 36px;
     transform: rotateY(0deg);
-  }
-  
-  .cardBack {
-    background-color: #F08A5D;
-    color: #fff;
+}
+
+.cardBack {
+    background-color: #545e67b3;
+    color: #FF8C00;
     display: flex;
     align-items: center;
-    border: 10px solid #F08A5D;
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
-  }
+}

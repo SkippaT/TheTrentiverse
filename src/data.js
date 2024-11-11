@@ -161,3 +161,36 @@ export const STUDIES = [
         ]
     },
 ];
+
+export const TECHNICAL_SKILLS = [
+    {
+        skill: "Java",
+        proficiency: "expert",
+        description: "This is a short description of how I gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Pthon",
+        proficiency: "advanced",
+        description: "This is a short description of how I gained this skill and what I have done with it.",
+    },
+    {
+        skill: "C++",
+        proficiency: "intermediate",
+        description: "This is a short description of how I gained this skill and what I have done with it.",
+    },
+    {
+        skill: "C",
+        proficiency: "beginner",
+        description: "This is a short description of how I gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Embedded Systems",
+        proficiency: "expert",
+        description: "This is a short description of how I gained this skill and what I have done with it.",
+    },
+    {
+        skill: "Cloud Computing",
+        proficiency: "beginner",
+        description: "This is a short description of how I gained this skill and what I have done with it.",
+    }
+]

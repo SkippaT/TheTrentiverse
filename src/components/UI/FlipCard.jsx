@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 import classes from './FlipCard.module.css';
 
-export default function FlipCard() {
+export default function FlipCard({ frontSide, backSide }) {
 
-    const [isFlipped, setIsFlipped] = useState();
+    const [isFlipped, setIsFlipped] = useState(false);
 
     const transition = {
         type: "spring",
@@ -24,15 +24,15 @@ export default function FlipCard() {
                 className={classes.innerCard}
                 variants={{
                     notFlipped: { rotateY: 0, transition: transition },
-                    flipped: { rotateY: 180, transition: transition }
+                    flipped: { rotateY: 180, transition: transition },
                 }}
                 animate={isFlipped ? "flipped" : "notFlipped"}
             >
                 <div className={classes.cardFront}>
-                    <p>Front Side</p>
+                    {frontSide}
                 </div>
                 <div className={classes.cardBack}>
-                    <p>Back Side</p>
+                    {backSide}
                 </div>
             </motion.div>
         </motion.div>

@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import FlipCard from "../UI/FlipCard.jsx";
 import classes from './TechnicalSkills.module.css';
 
+import { TECHNICAL_SKILLS } from '../../data.js';
+import ProficiencyBar from '../UI/ProficiencyBar.jsx';
+
 export default function TechnicalSkills() {
 
     return (
@@ -19,56 +22,32 @@ export default function TechnicalSkills() {
                     whileInView="visible"
                     viewport={{ once: false }}
                 >
-                    <motion.li
-                        variants={{
-                            hidden: { opacity: 0, scale: 0.5 },
-                            visible: { opacity: 1, scale: 1 }
-                        }}
-                        transition={{ type: 'spring' }}
-                    >
-                        <FlipCard title="Java" proficiency="expert" description="Lots of experience with personal projects. Initially learnt at RMIT." />
 
-                    </motion.li>
-                    <motion.li
-                        variants={{
-                            hidden: { opacity: 0, scale: 0.5 },
-                            visible: { opacity: 1, scale: 1 }
-                        }}
-                        transition={{ type: 'spring' }}
-                    >
-                        <FlipCard title="Java" proficiency="expert" description="Lots of experience with personal projects. Initially learnt at RMIT." />
+                    {TECHNICAL_SKILLS.map((skill) => (
+                        <motion.li
+                            key={skill.skill}
+                            variants={{
+                                hidden: { opacity: 0, scale: 0.5, rotateY: 90 },
+                                visible: { opacity: 1, scale: 1, rotateY: 0 }
+                            }}
+                            transition={{ type: 'spring' }}
+                        >
+                            <FlipCard 
+                            frontSide={
+                                <div className={classes.skill}>
+                                    <h3>{skill.skill}</h3>
+                                    <ProficiencyBar proficiency={skill.proficiency} />
+                                </div>
+                            }
+                            backSide={
+                                <div>
+                                    <p>{skill.description}</p>
+                                </div>
+                            }
+                            />
 
-                    </motion.li>
-                    <motion.li
-                        variants={{
-                            hidden: { opacity: 0, scale: 0.5 },
-                            visible: { opacity: 1, scale: 1 }
-                        }}
-                        transition={{ type: 'spring' }}
-                    >
-                        <FlipCard title="Java" proficiency="expert" description="Lots of experience with personal projects. Initially learnt at RMIT." />
-
-                    </motion.li>
-                    <motion.li
-                        variants={{
-                            hidden: { opacity: 0, scale: 0.5 },
-                            visible: { opacity: 1, scale: 1 }
-                        }}
-                        transition={{ type: 'spring' }}
-                    >
-                        <FlipCard title="Java" proficiency="expert" description="Lots of experience with personal projects. Initially learnt at RMIT." />
-
-                    </motion.li>
-                    <motion.li
-                        variants={{
-                            hidden: { opacity: 0, scale: 0.5 },
-                            visible: { opacity: 1, scale: 1 }
-                        }}
-                        transition={{ type: 'spring' }}
-                    >
-                        <FlipCard title="Java" proficiency="expert" description="Lots of experience with personal projects. Initially learnt at RMIT." />
-
-                    </motion.li>
+                        </motion.li>
+                    ))}
                 </motion.ul>
             </div>
         </>
